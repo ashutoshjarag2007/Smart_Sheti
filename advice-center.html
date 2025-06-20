@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>सल्ला केंद्र</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f1f8e9;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      transition: 0.4s ease;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container my-5">
+  <h2 class="text-success text-center mb-4">शेती सल्ला केंद्र</h2>
+
+  <!-- Advice Tips Section -->
+  <div class="row mb-5">
+    <div class="col-md-4">
+      <div class="card shadow-sm p-3">
+        <h5>पाणी व्यवस्थापन</h5>
+        <p>ठिबक सिंचनाचा वापर करून पाण्याची बचत करा. सकाळी लवकर किंवा संध्याकाळी पाणी द्या.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm p-3">
+        <h5>खते वापर</h5>
+        <p>माती परीक्षण करून योग्य प्रमाणात खते वापरा. सेंद्रिय खतांचा वापर वाढवा.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm p-3">
+        <h5>कीड नियंत्रण</h5>
+        <p>नैसर्गिक उपायांचा वापर करा जसे की निंबोळी अर्क किंवा ट्रॅप्स.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Query Form Section -->
+  <div class="card p-4 shadow-sm">
+    <h4 class="mb-3">तुमचा प्रश्न विचाराः</h4>
+    <form id="questionForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">नाव</label>
+        <input type="text" class="form-control" id="name" required placeholder="तुमचं नाव लिहा">
+      </div>
+      <div class="mb-3">
+        <label for="mobile" class="form-label">मोबाईल क्रमांक</label>
+        <input type="tel" class="form-control" id="mobile" required placeholder="उदा. ९८२३४५६७८९०">
+      </div>
+      <div class="mb-3">
+        <label for="question" class="form-label">प्रश्न</label>
+        <textarea class="form-control" id="question" rows="4" required placeholder="तुमचा प्रश्न इथे लिहा..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">प्रश्न पाठवा</button>
+    </form>
+  </div>
+</div>
+
+<!-- ✅ Bootstrap Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="successModalLabel">धन्यवाद!</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        तुमचा प्रश्न यशस्वीरित्या पाठवला गेला आहे. आम्ही लवकरच संपर्क करू.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">बंद</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Show modal on form submit
+  const form = document.getElementById('questionForm');
+  const modal = new bootstrap.Modal(document.getElementById('successModal'));
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent actual form submission
+    modal.show();
+    form.reset(); // Clear the form
+  });
+</script>
+</body>
+</html>
