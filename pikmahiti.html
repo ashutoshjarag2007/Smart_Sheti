@@ -24,9 +24,21 @@
       margin-top: 30px;
     }
 
-    .navbar-brand img {
+     .navbar-brand img {
       height: 50px;
       margin-right: 10px;
+    }
+
+    .nav-link {
+      color: white !important;
+      font-weight: 500;
+      padding: 8px 15px;
+    }
+
+    .nav-link:hover {
+      background-color: #1b5e20;
+      color: white !important;
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -34,23 +46,17 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <nav class="navbar navbar-dark bg-success sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="4.png" alt="Logo">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="#">मुख्यपृष्ठ</a></li>
-          <li class="nav-item"><a class="nav-link active" href="pikmahiti.html">पिक माहिती</a></li>
-          <li class="nav-item"><a class="nav-link active" href="whether.html">हवामान</a></li>
-          <li class="nav-item"><a class="nav-link active" href="advice-center.html">सल्ला केंद्र</a></li>
-          <li class="nav-item"><a class="nav-link active" href="yojana.html">शेतकरी योजना</a></li>
-
+      <div class="d-flex justify-content-evenly flex-grow-1">
+        <a class="nav-link" href="project.html">मुख्यपृष्ठ</a>
+        <a class="nav-link" href="pikmahiti.html">पिक माहिती</a>
+        <a class="nav-link" href="whether.html">हवामान</a>
+        <a class="nav-link" href="advice-center.html">सल्ला केंद्र</a>
+        <a class="nav-link" href="yojana.html">शेतकरी योजना</a>
       </div>
     </div>
   </nav>

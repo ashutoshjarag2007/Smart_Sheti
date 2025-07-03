@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html lang="mr">
-
-
-<!-- Author :- Ashutosh Jarag -->
-<!-- GPKP -->
-
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>स्मार्ट शेती प्रणाली</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body {
       background: #f5fff2;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-      transition: 0.4s ease;
+      margin: 0;
+      padding: 0;
     }
 
     footer {
@@ -33,42 +24,46 @@
       height: 50px;
       margin-right: 10px;
     }
+
+    .nav-link {
+      color: white !important;
+      font-weight: 500;
+      padding: 8px 15px;
+    }
+
+    .nav-link:hover {
+      background-color: #1b5e20;
+      color: white !important;
+      border-radius: 5px;
+    }
   </style>
 </head>
-
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+
+  <nav class="navbar navbar-dark bg-success sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="4.png" alt="Logo">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="#">मुख्यपृष्ठ</a></li>
-          <li class="nav-item"><a class="nav-link active" href="pikmahiti.html">पिक माहिती</a></li>
-          <li class="nav-item"><a class="nav-link active" href="whether.html">हवामान</a></li>
-          <li class="nav-item"><a class="nav-link active" href="advice-center.html">सल्ला केंद्र</a></li>
-          <li class="nav-item"><a class="nav-link active" href="yojana.html">शेतकरी योजना</a></li>
-
+      <div class="d-flex justify-content-evenly flex-grow-1">
+        <a class="nav-link" href="#">मुख्यपृष्ठ</a>
+        <a class="nav-link" href="pikmahiti.html">पिक माहिती</a>
+        <a class="nav-link" href="whether.html">हवामान</a>
+        <a class="nav-link" href="advice-center.html">सल्ला केंद्र</a>
+        <a class="nav-link" href="yojana.html">शेतकरी योजना</a>
       </div>
     </div>
   </nav>
 
-  <!-- Welcome Image -->
-  <img src="7.jpg" alt="शेती प्रतिमा" class="img-fluid">
-  </section>
+  <!-- Image Banner -->
+  <img src="7.jpg" alt="शेती प्रतिमा" class="img-fluid w-100">
 
+  <!-- Footer -->
   <footer>
     © 2025 स्मार्ट शेती प्रणाली. सर्व हक्क राखीव.
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

@@ -13,9 +13,40 @@
       transform: scale(1.03);
       transition: 0.4s ease;
     }
+         .navbar-brand img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .nav-link {
+      color: white !important;
+      font-weight: 500;
+      padding: 8px 15px;
+    }
+
+    .nav-link:hover {
+      background-color: #1b5e20;
+      color: white !important;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
+  
+  <nav class="navbar navbar-dark bg-success sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="4.png" alt="Logo">
+      </a>
+      <div class="d-flex justify-content-evenly flex-grow-1">
+        <a class="nav-link" href="project.html">मुख्यपृष्ठ</a>
+        <a class="nav-link" href="pikmahiti.html">पिक माहिती</a>
+        <a class="nav-link" href="whether.html">हवामान</a>
+        <a class="nav-link" href="advice-center.html">सल्ला केंद्र</a>
+        <a class="nav-link" href="yojana.html">शेतकरी योजना</a>
+      </div>
+    </div>
+  </nav>
 
 <div class="container my-5">
   <h2 class="text-success text-center mb-4">शेती सल्ला केंद्र</h2>
